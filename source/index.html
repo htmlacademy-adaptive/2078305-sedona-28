@@ -8,7 +8,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="logo">
+    <a class="main-header__logo">
       <img class="main-header__logo-image" src="img/logo_sedona.svg" width="185" height="96" alt="логотип седоны">
     </a>
     <nav class="main-nav">
@@ -16,8 +16,8 @@
         <span class="visually-hidden">открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__site-list">
-          <li class="site-list__item--current"><a href="#">Главная</a>
+        <ul class="main-nav__site-list site-list">
+          <li class="site-list__item site-list__item--current"><a href="#">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html">Фото и видео</a>
@@ -33,7 +33,7 @@
   </header>
 
   <main class="main-container">
-    <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+    <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
     <div class="welcome-picture">
       <img class="welcome-picture__img" src="img/welcome.svg" width="282" height="214" alt="Приветствие в Седону">
     </div>
@@ -44,13 +44,13 @@
           <p class="reasons__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </header>
         <ul class="reasons__list">
-          <li class="reasons__item reasons__item-accent">
+          <li class="reasons__item reasons__item--accent reasons-item">
             <h3 class="reasons-item__title">Настоящий городок</h3>
             <b class="reasons__numbers">— №1 —</b>
             <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизь</p>
             <img class="reasons__picture-town" src="img/city.jpg" width="520" height="260" alt="фото городка">
 
-            <div class="adventures__wrapper">
+            <div class="adventures">
               <ul class="adventures__list">
                 <li class="adventures__item">
                   <h3 class="adventures__title">Жилье</h3>
@@ -110,7 +110,7 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__hashtag-sedona hashtag-sedona">
-        <b class="hashtag__title">#visitsedona</b>
+        <b class="hashtag-sedona__title">#visitsedona</b>
       </div>
       <div class="main-footer__social social">
         <h3 class="visually-hidden">мы в социальных сетях.</h3>
@@ -129,7 +129,7 @@
       <div class="main-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="#">
-          <svg class="copyright__icon-html"  aria-hidden="true" focusable="false" width="27" height="34"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+          <svg class="copyright__icon-html" aria-hidden="true" focusable="false" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
             <path fill="currentColor"
               d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
           </svg>
