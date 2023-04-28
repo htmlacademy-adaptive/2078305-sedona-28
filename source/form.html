@@ -4,33 +4,37 @@
 <head>
   <meta charset="utf-8">
   <title> Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="catalog-header">
-    <a class="catalog-header__logo">
-      <img class="catalog-header__logo-image" src="img/logo_sedona.svg" width="185" height="96" alt="логотип седоны">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="логотип седоны">
     </a>
-    <nav class="catalog-nav">
-      <button class="catalog-nav__toggle" type="button">
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">открыть меню</span>
       </button>
-      <div class="catalog-nav__wrapper">
-        <ul class="catalog-nav__site-list site-list">
-          <li class="site-list__item"><a href="#">Главная</a>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__site-list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Фото и видео</a>
+            <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="site-list__item site-list__item--current">
-            <a href="form.html">Форма отзыва</a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-list__item"><a href="#">Html accademy</a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Html accademy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
+
   <main class="catalog-form container">
     <h1 class="catalog-form__title">Оставьте свой отзыв</h1>
     <p class="catalog-form__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
@@ -143,7 +147,7 @@
           </label>
         </fieldset>
 
-        <button class="reviews__button" type="button">Отправить отзыв</button>
+        <button class="reviews__button button" type="get">Отправить отзыв</button>
       </form>
     </div>
   </main>

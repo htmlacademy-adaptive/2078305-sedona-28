@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
+
 <head>
   <meta charset="utf-8">
   <title> Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/logo_sedona.svg" width="185" height="96" alt="логотип седоны">
+      <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="логотип седоны">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -17,15 +20,17 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__site-list site-list">
-          <li class="site-list__item site-list__item--current"><a href="#">Главная</a>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Фото и видео</a>
+            <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-list__item"><a href="#">Html accademy</a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Html accademy</a>
           </li>
         </ul>
       </div>
@@ -35,7 +40,7 @@
   <main class="main-container">
     <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
     <div class="welcome-picture">
-      <img class="welcome-picture__img" src="img/welcome.svg" width="282" height="214" alt="Приветствие в Седону">
+      <img class="welcome-picture__img" src="img/main-grafic/welcome.svg" width="282" height="214" alt="Приветствие в Седону">
     </div>
     <section class="reasons">
       <div class="reasons__wrapper">
@@ -48,7 +53,7 @@
             <h3 class="reasons-item__title">Настоящий городок</h3>
             <b class="reasons-item__numbers">— №1 —</b>
             <p class="reasons-item__description">Седона не аттракцион для туристов, там течет своя жизь</p>
-            <img class="reasons-item__picture-town" src="img/city.jpg" width="520" height="260" alt="фото городка">
+            <img class="reasons-item__picture-town" src="img/main-grafic/city.jpg" width="520" height="260" alt="фото городка">
 
             <div class="adventures">
               <ul class="adventures__list">
@@ -67,26 +72,26 @@
               </ul>
             </div>
           </li>
-          <li class="reasons__item reasons__item-accent reasons__item">
+          <li class="reasons__item reasons__item--accent reasons-item">
             <h3 class="reasons-item__title">Там есть мост дьявола</h3>
-            <b class="reasons__item__numbers">— №2 —</b>
-            <p class="reasons__item__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="reasons__item__picture-town" src="img/bridge.jpg" width="520" height="260" alt="фото моста">
+            <b class="reasons-item__numbers">— №2 —</b>
+            <p class="reasons-item__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <img class="reasons-item__picture-town" src="img/main-grafic/bridge.jpg" width="520" height="260" alt="фото моста">
           </li>
-          <li class="reasons__item">
+          <li class="reasons__item reasons-item">
             <h3 class="reasons-item__title">Небольшая площадь</h3>
-            <b class="reasons__numbers">— №3 —</b>
-            <p class="reasons__description">Все интересные места находятся очень близко</p>
+            <b class="reasons-item__numbers">— №3 —</b>
+            <p class="reasons-item__description">Все интересные места находятся очень близко</p>
           </li>
-          <li class="reasons__item">
+          <li class="reasons__item reasons-item">
             <h3 class="reasons-item__title">Красивая дорога</h3>
-            <b class="reasons__numbers">— №4 —</b>
-            <p class="reasons__description">Ехать в седону из лас-вегаса совсем не скучно!</p>
+            <b class="reasons-item__numbers">— №4 —</b>
+            <p class="reasons-item__description">Ехать в седону из лас-вегаса совсем не скучно!</p>
           </li>
-          <li class="reasons__item">
+          <li class="reasons__item reasons-item_">
             <h3 class="reasons-item__title">Мало туристов</h3>
-            <b class="reasons__numbers">— №5 —</b>
-            <p class="reasons__description">Большинство едет в гранд каньон и толпится там</p>
+            <b class="reasons-item__numbers">— №5 —</b>
+            <p class="reasons-item__description">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </div>
@@ -102,7 +107,7 @@
     </section>
     <section class="map">
       <div class="map__wrapper">
-        <img class="map__picture" src="img/map.jpg" width="320" height="350" alt="карта, с указанием городка седона">
+        <img class="map__picture" src="img/main-grafic/map.jpg" width="320" height="350" alt="карта, с указанием городка седона">
       </div>
     </section>
   </main>
@@ -116,13 +121,17 @@
         <h3 class="visually-hidden">мы в социальных сетях.</h3>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">телеграм</a>
+            <a class="social__link social__link--telegram" href="#">
+              <span class="visually-hidden">Telegram</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">youtube</a>
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Youtube</span></a>
           </li>
         </ul>
       </div>
