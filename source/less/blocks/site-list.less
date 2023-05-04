@@ -1,6 +1,14 @@
+.site-list {
+@media (min-width: @tablet-width) {
+  display: flex;
+  justify-content: space-between;
+  width: 768px;
+}
+}
+
 .site-list__link {
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
+  font-family:@main-font;
+  font-size: @main-size;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
