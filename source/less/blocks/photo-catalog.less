@@ -9,6 +9,11 @@
 
 }
 
+.photo-catalog__wrapper {
+
+  }
+
+
 .photo-catalog__title {
     .font-title;
   font-weight: 700;
@@ -22,4 +27,18 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    width: 648px;
+
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    width: 1200px;
+  }
 }
+
