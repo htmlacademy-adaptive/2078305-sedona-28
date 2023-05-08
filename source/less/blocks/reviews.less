@@ -5,19 +5,21 @@
 
 }
 
-@media (min-width: @tablet-width) {
-.reviews__wrapper {
-  display: grid;
-  grid-template-columns: 648px;
-  margin: 0 auto;
-}
-}
-
 .reviews__button {
   display: inline-block;
   padding: 16px 49px;
 }
 
 .reviews__form {
-
+@media (min-width: @tablet-width) {
+  width: 648px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 }
+}
+
+.reviews__wrapper {
+
+  }
+
