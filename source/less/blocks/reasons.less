@@ -9,17 +9,6 @@
 }
 
 .reasons__wrapper {
-
-  @media (min-width: @tablet-width) {
-    width: 768px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
-    margin: 0 auto;
-  }
-
 }
 
 .reasons__list {
@@ -29,20 +18,10 @@
 
   @media (min-width: @tablet-width) {
     width: 768px;
-    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-
+   flex-wrap: wrap;
 
   }
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
-
-}
 
 }
 
@@ -67,33 +46,7 @@
 }
 
 .reasons__item {
-background-color:  @secondary-color;
+background-color: @main-color;
   color: #000000;
 
-  &--accent {
-    background-color: @elements-color;
-    color: #ffffff;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    grid-column: 1/-1;
-    width: 768px;
-}
-
-  @media (min-width: @desktop-width) {
-    display: flex;
-    grid-column: 1/-1;
-  }
-  }
-}
-
-
-.reasons-item__picture-town {
-  @media (min-width: @tablet-width) {
-    width: 512px
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 800px
-  }
 }
