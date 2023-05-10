@@ -8,20 +8,45 @@
   text-transform: uppercase;
 }
 
+.reasons__wrapper {
+}
+
 .reasons__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
 
-.reasons__item {
-background-color:  @secondary-color;
-  color: #000000;
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    display: flex;
+   flex-wrap: wrap;
 
-  &--accent {
-    background-color: @elements-color;
-    color: #ffffff;
   }
 
 }
 
+.reasons__title {
+ .font-title;
+ margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 520px;
+    margin: 0 auto;
+
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 484px;
+    margin: 0 auto;
+}
+}
+
+.reasons__intro {
+  margin: 0;
+}
+
+.reasons__item {
+background-color: @main-color;
+  color: #000000;
+
+}

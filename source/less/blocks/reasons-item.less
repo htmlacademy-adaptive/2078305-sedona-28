@@ -1,3 +1,28 @@
+.reasons-item {
+
+  @media (min-width: @tablet-width) {
+    width: 33%;
+  }
+
+  &--accent {
+    background-color: @elements-color;
+    color: #ffffff;
+
+}
+
+&--select {
+  background-color: @secondary-color;
+}
+
+  &--image {
+    @media (min-width: @tablet-width) {
+      width: 66%;
+    }
+  }
+
+}
+
+
 .reasons-item__title {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -5,5 +30,9 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+}
+
+.reasons-item__description {
 
 }
