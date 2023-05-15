@@ -17,7 +17,6 @@
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
     display: flex;
    flex-wrap: wrap;
 
@@ -30,8 +29,10 @@
  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
+    font-size: 21px;
     width: 520px;
     margin: 0 auto;
+    padding-bottom: 37px;
 
   }
 
@@ -42,11 +43,20 @@
 }
 
 .reasons__intro {
-  margin: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .reasons__item {
 background-color: @main-color;
   color: #000000;
+  box-sizing: border-box;
 
 }

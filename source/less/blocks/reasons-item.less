@@ -9,9 +9,15 @@
     background-color: @elements-color;
     color: #ffffff;
     padding: 37px 18px;
+    box-sizing: border-box;
 
     @media (min-width: @tablet-width) {
       padding: 52px 33px 31px 33px;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 52px 50px;
     }
 
 }
@@ -40,9 +46,6 @@
 
 }
 
-
-
-
 .reasons-item__title {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -59,9 +62,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin-bottom: 28px;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .reasons-item__description {
-
 }
