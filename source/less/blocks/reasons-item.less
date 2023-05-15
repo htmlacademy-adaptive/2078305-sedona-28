@@ -2,25 +2,45 @@
 
   @media (min-width: @tablet-width) {
     width: 33%;
+
   }
 
   &--accent {
     background-color: @elements-color;
     color: #ffffff;
+    padding: 37px 18px;
 
+    @media (min-width: @tablet-width) {
+      padding: 52px 33px 31px 33px;
+    }
+
+}
+
+&--adventures {
+  text-align: start;
+  padding: 25px 18px 25px 65px;
 }
 
 &--select {
   background-color: @secondary-color;
+  padding: 24px 18px;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 33px 60px 33px;
+  }
 }
 
   &--image {
+
     @media (min-width: @tablet-width) {
       width: 66%;
+
     }
   }
 
 }
+
+
 
 
 .reasons-item__title {
@@ -30,6 +50,15 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+
+}
+
+.reasons-item__numbers {
+  font-family: @main-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 
 }
 

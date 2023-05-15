@@ -2,7 +2,7 @@
   position: relative;
   min-height: 56px;
   width: auto;
-  background-color: @main-color;
+
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -41,17 +41,13 @@
 }
 
 .main-nav--closed .main-nav__toggle:hover::before {
-  background-color: fade(@elements-color 20%);
-  box-shadow:
-    0 5px 0 0 fade(@elements-color 20%),
-    0 10px 0 0 fade(@elements-color 20%);
+  background-color: @elements-color;
+  opacity: 0.6;
+
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
-  background-color: fade(@elements-color 30%);
-  box-shadow:
-    0 5px 0 0 fade(@elements-color 30%),
-    0 10px 0 0 fade(@elements-color 30%);
+
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -76,18 +72,12 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-color: @elements-color;
 }
-
-.main-nav__list a {
-  color: @main-color;
 
 @media (min-width: @tablet-width) {
   .main-nav__wrapper {
     width: 768px;
-  }
-  .main-nav__list a {
-    color: @text-color;
-  }
 }
 }
 

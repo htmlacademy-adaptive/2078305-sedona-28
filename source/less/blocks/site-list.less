@@ -1,4 +1,6 @@
 .site-list {
+  font-weight: 700;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -9,12 +11,16 @@
 
 .site-list__link {
   font-family: @main-font;
-  font-size: @main-size;
-  font-weight: 700;
-  text-transform: uppercase;
+  padding-top: 17px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
   text-decoration: none;
+  text-transform: uppercase;
+
 
 }
+
 
 .site-list__item {
 
@@ -22,8 +28,5 @@
   @media (min-width: @tablet-width) {
     padding: 18px 47px 17px 48px;
 
-    &--current {
-      background-color: @color-current;
-    }
   }
 }
