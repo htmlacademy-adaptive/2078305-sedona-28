@@ -2,25 +2,41 @@
   background-color: @main-color;
   font-family: @main-font;
   font-weight: 400;
-
+  width: 280px;
 }
+
+.reviews__personal-dates {
+  margin-bottom: 59px;
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
 
 .reviews__button {
   display: inline-block;
   padding: 16px 49px;
+  box-sizing: border-box;
+  width: 280px;
 }
+
 
 .reviews__form {
 @media (min-width: @tablet-width) {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
+width: 648px;
 
 }
 
+@media (min-width: @desktop-width) {
+  width: 960px;
 }
 
-.reviews__wrapper {
-
-  }
+}
 

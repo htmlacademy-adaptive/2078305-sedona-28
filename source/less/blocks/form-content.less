@@ -1,26 +1,32 @@
 .form-content {
+  position: relative;
   background-color: @main-color;
   font-family: @main-font;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  width: 100%;
   border: none;
   margin: 0;
-  padding: 0;
+
+  &--impression {
+    padding-bottom: 49px;
+
+  }
+
+  &--monument {
+    padding-bottom: 49px;
+  }
 
 }
 
 @media (min-width: @tablet-width) {
   .form-content {
   &--name {
-    width: 50%;
-    text-align: left;
+
   }
 
   &--contacts {
-    width: 50%;
-    text-align: left;
+
   }
 }
 }
@@ -28,12 +34,29 @@
 .form-content__title {
   .font-title;
   text-transform: uppercase;
+  margin: auto;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+  }
+
 }
 
 .form-content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+
+  }
 }
 
 .form-content__item {
@@ -43,3 +66,37 @@
   text-transform: none;
 
 }
+
+.form-content__personal-dates {
+  display: grid;
+  grid-column: 1/-1;
+  text-align: start;
+  margin: 0;
+  gap: 16px;
+}
+
+.form-content__field {
+  position: relative;
+  font-family: @main-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  width: 280px;
+  height: 58px;
+  background-color: #f2f2f2;
+  border: none;
+
+  &--area {
+    width: 279px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+  }
+}
+
+.form-content__legend {
+  font-size: 12px;
+  line-height: 21px;
+  text-align: left;
+}
+

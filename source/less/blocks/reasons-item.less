@@ -10,6 +10,7 @@
     color: #ffffff;
     padding: 37px 18px;
     box-sizing: border-box;
+    text-align: center;
 
     @media (min-width: @tablet-width) {
       padding: 52px 33px 31px 33px;
@@ -22,14 +23,37 @@
 
 }
 
-&--adventures {
-  text-align: start;
-  padding: 25px 18px 25px 65px;
+&--home {
+  background-image: url("../img/main-grafic/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 22px 31px;
+  padding-left: 65px;
+  padding-bottom: 25px;
+  padding-top: 31px;
+
+}
+
+&--food {
+  background-image: url("../img/main-grafic/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 22px -2px;
+  padding-left: 65px;
+  padding-bottom: 25px;
+}
+
+&--souvenirs {
+  background-image: url(../img/main-grafic/icon-souvenirs.svg);
+  background-repeat: no-repeat;
+  background-position: 22px -2px;
+  padding-left: 65px;
+  padding-bottom: 49px;
 }
 
 &--select {
   background-color: @secondary-color;
   padding: 24px 18px;
+  text-align: center;
+  gap: 24px;
 
   @media (min-width: @tablet-width) {
     padding: 60px 33px 60px 33px;
@@ -41,6 +65,7 @@
     @media (min-width: @tablet-width) {
       width: 66%;
 
+
     }
   }
 
@@ -51,9 +76,12 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  text-align: center;
   text-transform: uppercase;
   margin: 0;
+
+  &--accent {
+    text-align: center;
+  }
 
 }
 
@@ -70,4 +98,5 @@
 }
 
 .reasons-item__description {
+  margin: 0;
 }
