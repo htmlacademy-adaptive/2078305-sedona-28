@@ -2,9 +2,10 @@
   font-weight: 700;
 
   @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
     display: flex;
     flex-wrap: wrap;
-    width: 768px;
     margin: 0;
   }
 }
@@ -30,9 +31,17 @@
 
 .site-list__item {
 
-
   @media (min-width: @tablet-width) {
-    padding: 18px 47px 17px 48px;
+    padding: 18px 27px 17px 30px;
+  }
 
+  @media (min-width: @desktop-width) {
+    padding: 18px 69px 17px 71px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__item:nth-child(2) {
+    margin-right: auto;
   }
 }
