@@ -3,24 +3,52 @@
   font-family: @main-font;
   font-weight: 400;
 
+  @media (min-width: @tablet-width) {
+
+  }
 }
+
+.reviews__personal-dates {
+  margin-bottom: 59px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 648px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}
+
+
 
 .reviews__button {
   display: inline-block;
   padding: 16px 49px;
+  box-sizing: border-box;
+  width: 280px;
 }
 
-.reviews__form {
+
+.reviews__form {}
+
+.reviews__legend {
+  font-size: 12px;
+  line-height: 21px;
+}
+
 @media (min-width: @tablet-width) {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+.reviews__send {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
 
 }
-
 }
-
-.reviews__wrapper {
-
-  }
-

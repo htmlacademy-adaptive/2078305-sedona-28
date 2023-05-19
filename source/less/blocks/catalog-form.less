@@ -2,23 +2,50 @@
   background-color: @main-color;
   font-family: @main-font;
   font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
-  text-align: center;
   text-transform: uppercase;
+
+}
+
+.catalog-form__wrapper {
+  width: 279px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
 
 }
 
 .catalog-form__title {
   .font-title;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+
+  }
 
 }
 
 .catalog-form__intro {
   width: 280px;
-  margin: 0 auto;
+  margin-bottom: 53px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     width: 436px;
+    margin: 0 auto;
+    padding-bottom: 108px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 68px;
   }
 }
 

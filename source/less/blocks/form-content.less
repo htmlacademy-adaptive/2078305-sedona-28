@@ -1,40 +1,42 @@
 .form-content {
+  position: relative;
   background-color: @main-color;
   font-family: @main-font;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  width: 100%;
   border: none;
   margin: 0;
   padding: 0;
 
-}
+  &--impression {
+    padding-bottom: 49px;
 
-@media (min-width: @tablet-width) {
-  .form-content {
-  &--name {
-    width: 50%;
-    text-align: left;
   }
 
-  &--contacts {
-    width: 50%;
-    text-align: left;
+  &--monument {
+    padding-bottom: 49px;
   }
-}
+
 }
 
 .form-content__title {
   .font-title;
   text-transform: uppercase;
+  margin: auto;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .form-content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 
 .form-content__item {
   font-size: 18px;
@@ -43,3 +45,125 @@
   text-transform: none;
 
 }
+
+.form-content__personal-dates {
+  display: grid;
+  grid-column: 1/-1;
+  text-align: start;
+  margin: 0;
+  gap: 16px;
+  position: relative;
+}
+
+.form-content__field {
+  font-family: @main-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  width: 280px;
+  height: 58px;
+  background-color: #f2f2f2;
+  border: none;
+
+  &--area {
+    font-family: @main-font;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.3);
+    width: 279px;
+    height: 150px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    border: none;
+    margin-bottom: 56px;
+    padding: 16px;
+  }
+}
+
+
+
+@media (min-width: @tablet-width) {
+  .form-content {
+    margin: 0;
+
+    &--name {
+
+    }
+
+    &--contacts {
+
+    }
+
+    &--impression {
+
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-content__title {
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .form-content__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+
+  }
+  .form-content__item  {
+    width: 280px;
+    text-align: center;
+  }
+
+  .form-content__field  {
+
+    &--area {
+      width: 648px;
+      height: 160px;
+    }
+
+    .form-content__legend {
+      text-align: left;
+}
+}
+}
+
+@media (min-width: @desktop-width) {
+  .form-content {
+
+    &--emotions {
+
+    }
+
+
+    &--name {
+      width: 430px;
+    }
+
+    &--contacts {
+      width: 430px;
+    }
+
+  }
+
+  .form-content__item {
+    width: 172px;
+  }
+
+  .form-content__field  {
+    width: 100%;
+
+    &--area {
+      width: 768px;
+    }
+  }
+
+}
+

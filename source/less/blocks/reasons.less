@@ -4,11 +4,11 @@
   font-size: 14px;
   line-height: 21px;
   color: #000000;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .reasons__wrapper {
+
 }
 
 .reasons__list {
@@ -17,7 +17,6 @@
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
     display: flex;
    flex-wrap: wrap;
 
@@ -27,11 +26,16 @@
 
 .reasons__title {
  .font-title;
- margin: 0;
+ margin-bottom: 35px;
+ padding-left: 18px;
+ padding-right: 18px;
+ text-align: center;
 
   @media (min-width: @tablet-width) {
+    font-size: 21px;
     width: 520px;
     margin: 0 auto;
+    padding-bottom: 37px;
 
   }
 
@@ -42,11 +46,24 @@
 }
 
 .reasons__intro {
-  margin: 0;
+  margin-bottom: 16px;
+  padding-right: 18px;
+  padding-left: 18px;
+  text-align: center;
+
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .reasons__item {
 background-color: @main-color;
   color: #000000;
+  box-sizing: border-box;
 
 }
