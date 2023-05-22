@@ -16,7 +16,9 @@
 
 .photo-catalog__title {
     .font-title;
-  font-weight: 700;
+@media (min-width: @tablet-width) {
+  font-size: 30px;
+}
 }
 
 .photo-catalog__intro {
@@ -39,6 +41,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 324px);
+    justify-content: center;
 
   }
 
