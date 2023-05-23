@@ -3,6 +3,7 @@
   margin: auto;
   padding: 45px 42px 33px 43px;
   background-color: @main-color;
+  box-sizing: border-box;
 }
 
 .modal__auth {
@@ -21,11 +22,31 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  margin-bottom: 10px;
+  margin: 0;
 
+}
+
+.modal__description {
+  margin-bottom: 20px;
 }
 
 .modal__close-button {
   padding: 18px 64px 13px 63px;
-  margin-left: 48px;
+  margin: auto;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .modal_auth {
+    width: 400px;
+  }
+
+  .modal {
+    padding: 50px 47px 49px 48px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
