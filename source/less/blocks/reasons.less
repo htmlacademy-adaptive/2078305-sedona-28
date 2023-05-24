@@ -7,18 +7,22 @@
   text-transform: uppercase;
 }
 
-.reasons__wrapper {
+.reasons__section {
   position: relative;
 }
 
-.reasons__wrapper::before {
+.reasons__section::before {
   content: "";
   width: 322px;
   height: 37px;
   display: block;
-  background-image: url(/source/img/decorate-mobile.svg);
-position: absolute;
-top: 165px;
+  background-image: url(../img/decorate-white-mobile.svg);
+  position: absolute;
+  top: 165px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .reasons__list {

@@ -42,6 +42,10 @@
   text-transform: none;
 }
 
+.form-content__control {
+  margin-bottom: 30px;
+}
+
 .form-content__personal-dates {
   display: grid;
   grid-column: 1/-1;
@@ -77,6 +81,10 @@
     margin-bottom: 56px;
     padding: 16px;
   }
+}
+
+.form-content__field:hover {
+  background-color: #e5e5e5;
 }
 
 @media (min-width: @tablet-width) {
@@ -126,6 +134,10 @@
     &--contacts {
       width: 430px;
     }
+  }
+
+  .form-content__item {
+    width: auto;
   }
 
   .form-content__field {

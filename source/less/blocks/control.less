@@ -18,6 +18,39 @@
   padding-left: 68px;
 }
 
-.control__input[type="radio"]+ .control__mark {
+.control__input[type="radio"]+.control__mark {
   border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked+.control__mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+ border-radius: 50%;
+  content: "";
+}
+
+.control__input[type="checkbox"]:checked+.control__mark::before {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 10px;
+  height: 2px;
+  background-color: #333333;
+  transform: rotate(45deg);
+  content: "";
+}
+
+.control__input[type="checkbox"]:checked+.control__mark::after {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  width: 22px;
+  height: 2px;
+  background-color: #333333;
+  transform: rotate(-40deg);
+  content: "";
 }
