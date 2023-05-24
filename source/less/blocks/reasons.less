@@ -7,7 +7,19 @@
   text-transform: uppercase;
 }
 
-//.reasons__wrapper {}//
+.reasons__wrapper {
+  position: relative;
+}
+
+.reasons__wrapper::before {
+  content: "";
+  width: 322px;
+  height: 37px;
+  display: block;
+  background-image: url(/source/img/decorate-mobile.svg);
+position: absolute;
+top: 165px;
+}
 
 .reasons__list {
   margin: 0;

@@ -1,5 +1,5 @@
 .welcome-picture {
-  background-color: @text-color;
+  background-color: @elements-color;
   height: 158px;
   background-image: url("../img/catalog-graphics/back-catalog-desktop.jpg");
   background-repeat: no-repeat;
@@ -11,9 +11,20 @@
   }
 
   &--full-version {
-    height: 389px;
+    position: relative;
+    min-height: 389px;
     margin-bottom: 47px;
     background-image: url("../img/main-graphics/photo/back-index-mobile.jpg");
+
+    &::before {
+      content: "";
+      width: 322px;
+      height: 57px;
+      display: block;
+      background-image: url("../img/decorate-mobile.svg");
+      position: absolute;
+      bottom: -2px;
+    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/main-graphics/photo/back-index-mobile@2x.jpg");
@@ -21,9 +32,22 @@
     }
 
     @media (min-width: @tablet-width) {
+      height: 518px;
+
       @media (min-resolution: 2dppx) {
         background-image: url("../img/main-graphics/photo/back-index-tablet@2x.jpg");
         background-size: 768px 518px;
+      }
+
+      &::before {
+        content: "";
+        width: 770px;
+        height: 57px;
+        display: block;
+        background-image: url("../img/decorate-tablet.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
       }
     }
   }

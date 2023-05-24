@@ -9,6 +9,10 @@
     margin: 0;
   }
 
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+
   &--main {
     @media (min-width: @tablet-width) {
       grid-column: 1/-1;
@@ -28,6 +32,9 @@
     background-color: #000000;
     opacity: 0.3;
     color: @main-color;
+    position: absolute;
+    width: 100%;
+    bottom: 4px;
   }
 }
 
@@ -61,7 +68,8 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    padding: 0;
     display: flex;
+    padding: 0;
+
   }
 }

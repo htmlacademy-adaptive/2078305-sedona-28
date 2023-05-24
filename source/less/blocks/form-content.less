@@ -47,8 +47,8 @@
   grid-column: 1/-1;
   text-align: start;
   margin: 0;
-  gap: 16px;
   position: relative;
+  padding-bottom: 16px;
 }
 
 .form-content__field {
@@ -61,6 +61,7 @@
   height: 58px;
   background-color: #f2f2f2;
   border: none;
+  padding-left: 16px;
 
   &--area {
     font-family: @main-font;
@@ -127,15 +128,15 @@
     }
   }
 
-  .form-content__item {
-    width: 172px;
-  }
-
   .form-content__field {
     width: 100%;
 
     &--area {
       width: 768px;
     }
+  }
+
+  .form-content__list {
+    justify-content: space-between;
   }
 }
